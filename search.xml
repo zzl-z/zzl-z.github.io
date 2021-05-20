@@ -17,6 +17,9 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>初入博客（hexo）</title>
@@ -26,5 +29,8 @@
 <h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
 <hr>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>
