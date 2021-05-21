@@ -5,19 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>初入博客（hexo） - Hexo</title>
+    <title>初入博客（hexo） - 奏者</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="第一章内容
+    <meta name="description" content="第一章Markdown基本语法1## 内容 ##
+下划线
+1&amp;lt;u&amp;gt;下划线&amp;lt;/U&amp;gt;
+内容加线
+1~~内容加线~~
 
-第二章内容
-
-"> 
+Markdown脚注^zzl
+123Markdown脚注[^,"> 
     <meta name="author" content="John Doe"> 
-    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
-    <link rel="icon" href="/img/logo.png"> 
+    <link rel="alternative" href="atom.xml" title="奏者" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon1.png"> 
     
     
 <link rel="stylesheet" href="/css/diaspora.css">
@@ -25,7 +28,7 @@
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="loading">
-    <span id="config-title" style="display:none">Hexo</span>
+    <span id="config-title" style="display:none">奏者</span>
     <div id="loader"></div>
     <div id="single">
     <div id="top" style="display: block;">
@@ -56,9 +59,100 @@
 
         </div>
         <div class="content markdown">
-            <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+            <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## 内容 ##</span><br></pre></td></tr></table></figure>
+<p><u>下划线</U></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;下划线&lt;/U&gt;</span><br></pre></td></tr></table></figure>
+<p><del>内容加线</del></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~内容加线~~</span><br></pre></td></tr></table></figure>
+
+<p>Markdown脚注<a href="%E5%AD%90%E9%BE%99%E3%80%82">^zzl</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Markdown脚注[^zzl]</span><br><span class="line"></span><br><span class="line">[^zzl]:奏者。</span><br></pre></td></tr></table></figure>
+
+
+
 <hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="Markdown列表"><a href="#Markdown列表" class="headerlink" title="Markdown列表"></a>Markdown列表</h2><p>无序列表</p>
+<ul>
+<li>第一项</li>
+</ul>
+<ul>
+<li>第二项</li>
+</ul>
+<ul>
+<li>第三项</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">+ 第一项</span><br><span class="line"></span><br><span class="line">* 第二项</span><br><span class="line"></span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure>
+
+<p>有序列表镶嵌</p>
+<ol>
+<li>第一项<ul>
+<li>第一元素</li>
+<li>第二元素</li>
+</ul>
+</li>
+<li>第二项</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">   - 第一元素</span><br><span class="line">   - 第二元素</span><br><span class="line">2. 第二项</span><br></pre></td></tr></table></figure>
+<h2 id="Markdown区块"><a href="#Markdown区块" class="headerlink" title="Markdown区块"></a>Markdown区块</h2><blockquote>
+<p>这是<br>一个Markdown<br>区块<br>每一行后面接有两个空格换行</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 这是  </span><br><span class="line">&gt; 一个Markdown  </span><br><span class="line">&gt; 区块  </span><br><span class="line">&gt; 每一行后面接有两个空格换行</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="Markdown区块嵌套"><a href="#Markdown区块嵌套" class="headerlink" title="Markdown区块嵌套"></a>Markdown区块嵌套</h2><blockquote>
+<p>这是  </p>
+<blockquote>
+<p>一个Markdown  </p>
+<blockquote>
+<p>区块  </p>
+<blockquote>
+<p>每一行后面接有两个空格换行</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; 这是  </span><br><span class="line">&gt;&gt; 一个Markdown  </span><br><span class="line">&gt;&gt;&gt; 区块  </span><br><span class="line">&gt;&gt;&gt;&gt; 每一行后面接有两个空格换行</span><br></pre></td></tr></table></figure>
+<h2 id="Markdown区块嵌套列表"><a href="#Markdown区块嵌套列表" class="headerlink" title="Markdown区块嵌套列表"></a>Markdown区块嵌套列表</h2><blockquote>
+<ol>
+<li>这是  <blockquote>
+<ul>
+<li>一个Markdown  <blockquote>
+<ul>
+<li>区块  <blockquote>
+<ol start="2">
+<li>每一行后面接有两个空格换行</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;1. 这是  </span><br><span class="line">&gt;&gt; - 一个Markdown  </span><br><span class="line">&gt;&gt;&gt; + 区块  </span><br><span class="line">&gt;&gt;&gt;&gt; 2. 每一行后面接有两个空格换行</span><br></pre></td></tr></table></figure>
+<h2 id="Markdown列表嵌套区块"><a href="#Markdown列表嵌套区块" class="headerlink" title="Markdown列表嵌套区块"></a>Markdown列表嵌套区块</h2><ol>
+<li>列表一<blockquote>
+<p>区块1<br>区块2<br>区块3  </p>
+</blockquote>
+</li>
+<li>列表二</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 列表一</span><br><span class="line">    &gt; 区块1  </span><br><span class="line">    &gt; 区块2  </span><br><span class="line">    &gt; 区块3  </span><br><span class="line">2. 列表二</span><br></pre></td></tr></table></figure>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h2 id="Markdown代码"><a href="#Markdown代码" class="headerlink" title="Markdown代码"></a>Markdown代码</h2><p>可以用 ``` 包裹一段代码，并指定一种语言（也可以不指定）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Systm.out.println(<span class="string">&quot;hello woeld&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Markdown链接"><a href="#Markdown链接" class="headerlink" title="Markdown链接"></a>Markdown链接</h2><p>Markdown链接使用方法</p>
+<blockquote>
+<p><a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a><br>或者<br>&lt;链接地址&gt;</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; [链接名称](链接地址)  </span><br><span class="line">&gt; 或者  </span><br><span class="line">&gt; &lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h2><p>这个链接用 1 作为网址变量 <a target="_blank" rel="noopener" href="http://www.google.com/">Google</a><br>这个链接用 bolog 作为网址变量 <a target="_blank" rel="noopener" href="https://zzl-z.github.io/">bolog</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 bolog 作为网址变量 [bolog][bolog]</span><br><span class="line"></span><br><span class="line">[1]: http://www.google.com/</span><br><span class="line">[bolog]: https://zzl-z.github.io/</span><br><span class="line">网址也可以是图片链接</span><br></pre></td></tr></table></figure>
+<h2 id="Markdown图片"><a href="#Markdown图片" class="headerlink" title="Markdown图片"></a>Markdown图片</h2><p>Markdown图片语法格式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/zzl3.png" alt="avatar"></p>
 <hr>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
@@ -91,7 +185,7 @@
     </div>
     
         <div class='side'>
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text">第二章</span></a></li></ol>	
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">Markdown基本语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">3.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%88%97%E8%A1%A8"><span class="toc-number">4.</span> <span class="toc-text">Markdown列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%8C%BA%E5%9D%97"><span class="toc-number">5.</span> <span class="toc-text">Markdown区块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%8C%BA%E5%9D%97%E5%B5%8C%E5%A5%97"><span class="toc-number">6.</span> <span class="toc-text">Markdown区块嵌套</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%8C%BA%E5%9D%97%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8"><span class="toc-number">7.</span> <span class="toc-text">Markdown区块嵌套列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%88%97%E8%A1%A8%E5%B5%8C%E5%A5%97%E5%8C%BA%E5%9D%97"><span class="toc-number">8.</span> <span class="toc-text">Markdown列表嵌套区块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">9.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E4%BB%A3%E7%A0%81"><span class="toc-number">10.</span> <span class="toc-text">Markdown代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E9%93%BE%E6%8E%A5"><span class="toc-number">11.</span> <span class="toc-text">Markdown链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E9%93%BE%E6%8E%A5"><span class="toc-number">12.</span> <span class="toc-text">高级链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Markdown%E5%9B%BE%E7%89%87"><span class="toc-number">13.</span> <span class="toc-text">Markdown图片</span></a></li></ol>	
         </div>
     
 </div>
