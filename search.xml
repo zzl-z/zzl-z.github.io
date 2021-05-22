@@ -132,4 +132,30 @@
         <tag>Blogo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Test1</title>
+    <url>/2021/05/22/Test1/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>xm</category>
+      </categories>
+      <tags>
+        <tag>ssm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用IDEA与ORACLE编写一个简单的项目</title>
+    <url>/2021/05/22/%E4%BD%BF%E7%94%A8IDEA%E4%B8%8EORACLE%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>奏者</p>
+</blockquote>
+<hr>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
 </search>
