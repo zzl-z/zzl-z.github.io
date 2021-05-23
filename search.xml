@@ -30,8 +30,8 @@
 <p><del>内容加线</del></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~内容加线~~</span><br></pre></td></tr></table></figure>
 
-<p>Markdown脚注<a href="%E5%AD%90%E9%BE%99%E3%80%82">^zzl</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Markdown脚注[^zzl]</span><br><span class="line"></span><br><span class="line">[^zzl]:奏者。</span><br></pre></td></tr></table></figure>
+<p>Markdown脚注 <a href="%E5%A5%8F%E8%80%85%E3%80%82">^zzl</a>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Markdown脚注[^zzl]</span><br><span class="line"></span><br><span class="line">[^zzl]: 奏者。</span><br></pre></td></tr></table></figure>
 
 
 
@@ -118,6 +118,76 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
 
 <p><img src="/img/zzl3.png" alt="avatar"></p>
+<p>如果觉得这样麻烦且又不能指定图片的高度与宽度的话，可以使用普通的&lt;img&gt;标签。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;/img/zzl3.png&quot; width=&quot;50%&quot; hight=&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure>
+<img src="/img/zzl3.png" width="50%" hight="50%">
+
+<h2 id="Markdown表格"><a href="#Markdown表格" class="headerlink" title="Markdown表格"></a>Markdown表格</h2><p>Markdown 制作表格使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头 | 表头 |</span><br><span class="line">| --- | --- |</span><br><span class="line">| 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p>设置对齐方式</p>
+<blockquote>
+<p>—: 右对齐<br>:— 左对齐<br>:—: 居中对齐</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">表头</th>
+<th align="right">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+</tr>
+</tbody></table>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><h2 id="Markdown高级技巧"><a href="#Markdown高级技巧" class="headerlink" title="Markdown高级技巧"></a>Markdown高级技巧</h2><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
+<p>目前支持的 HTML 元素有：&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;等 ，如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">使用<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Ctrl<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Alt<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Del<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span> 重启电脑</span><br></pre></td></tr></table></figure>
+<p>使用<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<p>在编写Markdown文章时有很多特殊符号不显示，所以就要用到转义符 \ 。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">目前支持的 HTML 元素有：\<span class="tag">&lt;<span class="name">kbd</span>&gt;</span> \<span class="tag">&lt;<span class="name">b</span>&gt;</span> \<span class="tag">&lt;<span class="name">i</span>&gt;</span> \<span class="tag">&lt;<span class="name">em</span>&gt;</span> \<span class="tag">&lt;<span class="name">sup</span>&gt;</span> \<span class="tag">&lt;<span class="name">sub</span>&gt;</span> \<span class="tag">&lt;<span class="name">br</span>&gt;</span>等 ，如：</span><br></pre></td></tr></table></figure>
+
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf&#123;V&#125;_1 \times \mathbf&#123;V&#125;_2 =  \begin&#123;vmatrix&#125; </span><br><span class="line">\mathbf&#123;i&#125; &amp; \mathbf&#123;j&#125; &amp; \mathbf&#123;k&#125; \\</span><br><span class="line">\frac&#123;\partial X&#125;&#123;\partial u&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial u&#125; &amp; 0 \\</span><br><span class="line">\frac&#123;\partial X&#125;&#123;\partial v&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial v&#125; &amp; 0 \\</span><br><span class="line">\end&#123;vmatrix&#125;</span><br><span class="line">$&#123;$tep1&#125;&#123;\style&#123;visibility:hidden&#125;&#123;(x+1)(x+1)&#125;&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p>$$<br>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \<br>\end{vmatrix}<br>${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}<br>$$</p>
+<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><blockquote>
+<p>横向流程图</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a=1| D[结果1]</span><br><span class="line">    C --&gt;|a=2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
+
+<p>graph LR<br>A[方形] –&gt;B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt;|a=1| D[结果1]<br>    C –&gt;|a=2| E[结果2]<br>    F[横向流程图]</p>
+<blockquote>
+<p>竖向流程图</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a=1| D[结果1]</span><br><span class="line">    C --&gt; |a=2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
+
+<p>graph TD<br>A[方形] –&gt; B(圆角)<br>    B –&gt; C{条件a}<br>    C –&gt; |a=1| D[结果1]<br>    C –&gt; |a=2| E[结果2]<br>    F[竖向流程图]</p>
+<blockquote>
+<p>标准流程图</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">st=&gt;start: 开始框</span><br><span class="line">op=&gt;operation: 处理框</span><br><span class="line">cond=&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1=&gt;subroutine: 子流程</span><br><span class="line">io=&gt;inputoutput: 输入输出框</span><br><span class="line">e=&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>st=&gt;start: 开始框<br>op=&gt;operation: 处理框<br>cond=&gt;condition: 判断框(是或否?)<br>sub1=&gt;subroutine: 子流程<br>io=&gt;inputoutput: 输入输出框<br>e=&gt;end: 结束框<br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;io-&gt;e<br>cond(no)-&gt;sub1(right)-&gt;op</p>
 <hr>
 ]]></content>
       <tags>
